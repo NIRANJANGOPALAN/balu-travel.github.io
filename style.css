@@ -113,7 +113,7 @@ section {
     align-items: center;
 }
 .explore-section{
-    background-image: url("Assets/stack of pics.png");
+    background-image: url("Assets/explore pic.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -656,8 +656,7 @@ h2 {
 }
 
 .popular-destinations,
-.booking-call-to-action,
-.partner-airlines {
+.booking-call-to-action{
     max-width: 1200px;
     margin: 0 auto 2rem;
     padding: 0 2rem;
@@ -730,22 +729,54 @@ h3 {
     border-color: darkblue;
 }
 
+.partner-airlines {
+    max-width: 100%;
+    margin: 0 auto 2rem;
+    padding: 0 1rem;
+    overflow: hidden;
+}
+
 .airline-logo-carousel {
     display: flex;
-    overflow: auto;
-    white-space: nowrap;
-    padding: 1rem 0;
-    animation: scroll 30s linear infinite;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch; /* Smooth scrolling for iOS */
+    scroll-behavior: smooth;
 }
-.airline-logo-carousel:hover {
-    animation-play-state: paused; /* Pause on hover */
-}
+
 .airline-logo-carousel img {
     height: 50px;
     width: auto;
     margin: 0 1rem;
     object-fit: contain;
     flex-shrink: 0;
+    scroll-snap-align: start;
+}
+
+/* Responsive adjustments */
+@media screen and (min-width: 480px) {
+    .airline-logo-carousel img {
+        height: 60px;
+        margin: 0 1.5rem;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .partner-airlines {
+        padding: 0 2rem;
+    }
+    
+    .airline-logo-carousel img {
+        height: 70px;
+        margin: 0 2rem;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .airline-logo-carousel img {
+        height: 80px;
+        margin: 0 2.5rem;
+    }
 }
 
 @media (max-width: 768px) {
@@ -1026,6 +1057,40 @@ body {
 
 }
 
+.Accredited-logo-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .Accredited-logo {
+    max-width: 200px;
+    height: auto;
+    margin: 10px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .Accredited-logo {
+      max-width: 150px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .Accredited-logo {
+      max-width: 100px;
+    }
+  }
+  
+  /* Optional: Add hover effect */
+  .Accredited-logo:hover {
+    transform: scale(1.1);
+  }
 
 
 
@@ -1052,6 +1117,7 @@ footer {
 /* ------------------------ group sction*/
 #group {
     padding: 2rem 0;
+    background-color: white;
 }
 
 .partner-logos-group {
