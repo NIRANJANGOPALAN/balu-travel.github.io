@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Balu Travel</title>
-    <link rel="icon" type="image/x-icon" href="./Assets/Icon logo.png">
+    <link rel="icon" type="image/x-icon" href="./Assets/Balu Travel 02.jpg">
     <link rel="stylesheet" href="style.css    ">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
@@ -37,9 +37,12 @@
             <img src="./Assets/Balu Travel 02.jpg" alt="ColorfulScroll Logo" class="logo" onclick="location.reload();" style="cursor: pointer;">
             <!-- <img src="https://via.placeholder.com/150x50?text=ColorfulScroll" alt="ColorfulScroll Logo" class="logo"> -->
             <nav>
-                <div class="menu-toggle">
-                    <i class="fas fa-bars"></i>
-                </div>
+                <input type="checkbox" id="menu-toggle" class="menu-toggle">
+                <label for="menu-toggle" class="menu-icon">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </label>
                 <ul class="menu">
                     <li><a href="#explore">Explore</a></li>
                     <li><a href="#services">Services</a></li>
@@ -155,7 +158,7 @@
 
                     <div class="booking-call-to-action">
                         <h3>Book With Us and Enjoy Your Holiday</h3>
-                        <button class="booking-button">Enquire Now</button>
+                        <button class="booking-button" onclick="location.href='#contact'">Enquire Now</button>
                     </div>
                     <div class="partner-airlines">
                         <h3>Our Partner Airlines</h3>
@@ -171,7 +174,7 @@
                             <img src="Assets\Airlines logos\Qantas_Airways_logo_2016.svg" alt="Airline 9">
                             <img src="Assets\Airlines logos\Turkish_Airlines_logo_2019_compact.svg" alt="Airline 10">
                             <img src="Assets\Airlines logos\Virgin_Atlantic_logo_2018.svg" alt="Airline 11">
-
+                            <button class="scroll-button right">&gt;</button>
                             <!-- Add more airline logos as needed -->
                         </div>
                     </div>
@@ -252,7 +255,7 @@
                         <div class="partner-logos-money">
                             <img src="Assets\partner logos\money-gram-logo.png" alt="MoneyGram"
                                 class="partner-logo-money">
-                            <img src="Assets\partner logos\westernunion logo.png" alt="Western Union"
+                            <img src="Assets\partner logos\Western_Union_current_logo.svg" alt="Western Union"
                                 class="partner-logo-money">
                         </div>
                     </div>
@@ -279,10 +282,14 @@
         <section id="partners" style="background-color: rgb(255, 255, 255);">
             <h2>We are the Proud Agents for These Companies</h2>
             <div class="partner-logos">
-                <img src="Assets\partner logos\nationalexpress_logo.png" alt="National Express">
-                <img src="Assets\partner logos\dhl logo-.png" alt="DHL ServicePoint">
-                <img src="Assets\partner logos\westernunion logo.png" alt="Western Union">
-                <img src="Assets\partner logos\money-gram-logo.png" alt="MoneyGram">
+                <div class="logo-row">
+                    <img src="Assets/partner logos/nationalexpress_logo.png" alt="National Express">
+                    <img src="Assets/partner logos/dhl logo-.png" alt="DHL ServicePoint">
+                </div>
+                <div class="logo-row">
+                    <img src="Assets/partner logos/Western_Union_current_logo.svg" alt="Western Union">
+                    <img src="Assets/partner logos/money-gram-logo.png" alt="MoneyGram">
+                </div>
             </div>
         </section>
 
@@ -296,7 +303,7 @@
                             I’m almost 80yrs and treated me with great respect and explained everything to me with
                             extreme patience.
                             Will always book with Balu Travel as I’m a long time customer for over 30 yrs.</p>
-                        <span>- Sam Sing</span>
+                        <span>- Sumitra Bandopadhyay</span>
                     </div>
                     <div class="review">
                         <p>"5 star service from start to Finnish speedy visa service very professional will use again
@@ -445,10 +452,12 @@
             <h2>The Balu Partnership Group of Companies</h2>
             <div class="partner-logos-group">
                 <img src="Assets\group\Balu group of companies.jpg" alt="Balu Group">
-                <img src="Assets\group\balu partnership.png" alt="Balu Group">
-                <img src="Assets\group\ccs.jpg" alt="ccs">
-                <img src="Assets/group/mlb logo.png" alt="mlb">
-                <!-- <img src="Assets\partner logos\money-gram-logo.png" alt="MoneyGram"> -->
+                <div class="logo-row">
+                    <img src="Assets\group\balu partnership.png" alt="Balu partership">
+                    <img  class="balu-travel" src="Assets/Balu Travel 02.jpg" alt="BaluTravel">
+                    <img src="Assets\group\ccs.jpg" alt="ccs">
+                    <img src="Assets/group/mlb logo.png" alt="mlb">
+                </div>
             </div>
         </section>
 
@@ -460,11 +469,6 @@
         <section id="contact" style="background-color: rgb(244, 244, 244);">
             <h2>Get in Touch</h2>
             <div class="contact-container">
-                <div class="contact-form">
-                    <iframe
-                        src="https://docs.google.com/forms/d/e/1FAIpQLSeQJQMFwrXXTImYptK_gRxsa4LBWM1rRTnPbF4g0PGzYyHa9g/viewform?embedded=true"
-                        width="100%" height="682" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
-                </div>
                 <div class="contact-right">
                     <div class="contact-image">
                         <img src="Assets\contact.jpeg" alt="Contact Image">
@@ -494,17 +498,10 @@
     <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSeQJQMFwrXXTImYptK_gRxsa4LBWM1rRTnPbF4g0PGzYyHa9g/viewform?embedded=true" width="640" height="686" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe> -->
     <footer>
         <div class="footer-content">
-            <div class="text">
-                <span class="balu-travel">Balu Travel</span>
-            </div>
-            <div class="social-links">
-                <a href="#"><i class="fab fa-facebook"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
-            </div>
+            <img src="Assets\balu travel full name.jpg" alt="Balu Travel" class="footer-image">
         </div>
         <div class="copyright">
-            <p>&copy; 2024 Balu Travel. All rights reserved.</p>
+            <p><b>&copy; 2024 Balu Travel. All rights reserved.</b></p>
         </div>
     </footer>
     <script src="script.js"></script>
