@@ -32,13 +32,6 @@ menuToggle.addEventListener('click', () => {
     menu.classList.toggle('show');
 });
 
-// Simple form validation
-const form = document.querySelector('form');
-form.addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you for your message! We\'ll get back to you soon.');
-    form.reset();
-});
 
 // Auto-scroll review carousel
 const reviewCarousel = document.querySelector('.review-carousel');

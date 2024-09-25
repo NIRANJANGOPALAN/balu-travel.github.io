@@ -1580,6 +1580,68 @@ h1::after {
         font-size: 1.3rem;
     }
 }
+.timeline-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+.timeline-header h2 {
+    margin: 0;
+    margin-right: 10px;
+}
+
+.stamp-image1 {
+    width: 160px; /* Increased base size */
+    height: 120px;
+    max-height: none; /* Remove max-height constraint */
+    
+}
+@media (max-width: 768px) {
+    .timeline-header {
+        flex-direction: column;
+    }
+
+    .timeline-header h2 {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+
+    .stamp-image1 {
+        width: 50px;
+        max-height: 70px;
+    }
+}
+
+@media (max-width: 480px) {
+    .stamp-image1 {
+        width: 100px;
+        max-height: 70px;
+    }
+}
+.stamp-image2 {
+    width: 90px; /* Adjust size as needed */
+    height: 130px;
+    float: right;
+    margin: 0 0 10px 10px;
+    border: 1px solid #ccc;
+    padding: 2px;
+    background-color: #f9f9f9;
+}
+
+@media (max-width: 768px) {
+    .stamp-image2 {
+        width: 25%; /* Slightly smaller on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .stamp-image2 {
+        width: 20%; /* Even smaller on mobile screens */
+        height: 20%;
+    }
+}
 
 /* ------------------------ service contact*/
 #contact {
