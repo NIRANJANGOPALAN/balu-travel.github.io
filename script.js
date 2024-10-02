@@ -51,5 +51,23 @@ function autoScroll() {
     setTimeout(autoScroll, scrollDelay);
 }
 
+document.addEventListener('DOMContentLoaded', function() {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mainNav = document.querySelector('.main-nav');
+    const menuLinks = document.querySelectorAll('.menu li a');
+
+    // Toggle the menu on button click
+    menuToggle.addEventListener('click', function() {
+        mainNav.classList.toggle('active');
+    });
+
+    // Close the menu when a link is clicked
+    menuLinks.forEach(link => {
+        link.addEventListener('click', function() {
+            mainNav.classList.remove('active'); // Close the menu
+        });
+    });
+});
+
 autoScroll();
 
